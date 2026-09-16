@@ -31,15 +31,7 @@
 
 ## Curriculum Vitae
 
-<div align="center">
-
-### **Dr Harry Patria — Interactive CV**
-
-A detailed CV is available in the repository and can be opened directly from this profile.
-
 **[→ View CV](./CV/harry-patria-cv.pdf)** 
-
-</div>
 
 ---
 
@@ -64,5 +56,5 @@ Designing AI systems beyond a single model — combining **agents, retrieval, au
 ```
 
 <div align="center">
-<sub>Dr Harry Patria · Data & AI · Engineering · Strategy · Research</sub>
+<sub> Data & AI · Engineering · Strategy · Research</sub>
 </div>
