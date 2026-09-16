@@ -186,7 +186,7 @@ My research sits at the intersection of **cognition, scenario planning, data sci
 ## Selected Recognition
 
 - **Rising Star and Alumni Award**, Vice-Chancellor, Newcastle University — 2025
-- **1st Winner, Data Scientist**, UK Maritime Week Innovation — 2022
+- **1st Winner, Data Scientist**, UK Maritime Week Innovation, NICD and Port of Tyne — 2022
 - **Best Innovator and Employee of the Year**, Elnusa Petrofin — 2018
 
 ---
