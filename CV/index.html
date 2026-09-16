@@ -1,575 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dr Harry Patria — Data & AI Lead, Principal AI Software Engineer, AI Strategy, Analytics and Research.">
-  <title>Dr Harry Patria | Data & AI</title>
-  <style>
-    :root {
-      --bg: #f7f7f5;
-      --surface: #ffffff;
-      --text: #111827;
-      --muted: #667085;
-      --line: #e5e7eb;
-      --soft: #f1f3f5;
-      --accent: #111827;
-      --max: 1080px;
-      --radius: 18px;
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
-                   "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.65;
-    }
-
-    a { color: inherit; text-decoration: none; }
-
-    .container {
-      width: min(calc(100% - 40px), var(--max));
-      margin: 0 auto;
-    }
-
-    header {
-      padding: 92px 0 58px;
-      border-bottom: 1px solid var(--line);
-      background: var(--surface);
-    }
-
-    .eyebrow {
-      margin: 0 0 14px;
-      color: var(--muted);
-      font-size: .78rem;
-      font-weight: 700;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(2.7rem, 7vw, 5.7rem);
-      line-height: .98;
-      letter-spacing: -.055em;
-      font-weight: 750;
-    }
-
-    .title {
-      margin: 22px 0 28px;
-      max-width: 850px;
-      color: #374151;
-      font-size: clamp(1.15rem, 2.4vw, 1.65rem);
-      line-height: 1.45;
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .links a, .button {
-      display: inline-flex;
-      align-items: center;
-      min-height: 42px;
-      padding: 8px 15px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: var(--surface);
-      font-size: .9rem;
-      font-weight: 650;
-      transition: .2s ease;
-    }
-
-    .links a:hover, .button:hover {
-      border-color: var(--accent);
-      transform: translateY(-1px);
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      border-bottom: 1px solid var(--line);
-      background: rgba(247,247,245,.92);
-      backdrop-filter: blur(14px);
-    }
-
-    nav .container {
-      display: flex;
-      gap: 22px;
-      overflow-x: auto;
-      padding: 13px 0;
-      scrollbar-width: none;
-    }
-
-    nav .container::-webkit-scrollbar { display: none; }
-
-    nav a {
-      white-space: nowrap;
-      color: var(--muted);
-      font-size: .82rem;
-      font-weight: 700;
-    }
-
-    nav a:hover { color: var(--text); }
-
-    section {
-      padding: 76px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .section-label {
-      margin-bottom: 24px;
-      color: var(--muted);
-      font-size: .76rem;
-      font-weight: 800;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-
-    h2 {
-      margin: 0 0 22px;
-      font-size: clamp(2rem, 4vw, 3.3rem);
-      line-height: 1.08;
-      letter-spacing: -.04em;
-    }
-
-    h3 {
-      margin: 0 0 9px;
-      font-size: 1.3rem;
-      letter-spacing: -.02em;
-    }
-
-    p { margin: 0 0 18px; }
-
-    .lead {
-      max-width: 820px;
-      color: #374151;
-      font-size: 1.18rem;
-    }
-
-    .quote {
-      margin-top: 28px;
-      padding: 18px 22px;
-      border-left: 3px solid var(--accent);
-      color: #374151;
-      font-size: 1.05rem;
-      font-weight: 650;
-    }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1px;
-      margin-top: 42px;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--line);
-    }
-
-    .stat {
-      padding: 24px;
-      background: var(--surface);
-    }
-
-    .stat strong {
-      display: block;
-      margin-bottom: 5px;
-      font-size: 1.65rem;
-      letter-spacing: -.04em;
-    }
-
-    .stat span {
-      color: var(--muted);
-      font-size: .86rem;
-    }
-
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 30px;
-    }
-
-    .button.primary {
-      background: var(--accent);
-      color: white;
-      border-color: var(--accent);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
-
-    .card {
-      padding: 28px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--surface);
-    }
-
-    .card p:last-child { margin-bottom: 0; }
-
-    .role {
-      margin-bottom: 22px;
-      color: var(--muted);
-      font-size: .9rem;
-      font-weight: 650;
-    }
-
-    ul {
-      margin: 15px 0 0;
-      padding-left: 20px;
-    }
-
-    li { margin: 7px 0; }
-
-    .stack {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1px;
-      margin-top: 32px;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--line);
-    }
-
-    .stack-item {
-      padding: 22px;
-      background: var(--surface);
-    }
-
-    .stack-item strong {
-      display: block;
-      margin-bottom: 8px;
-      font-size: .88rem;
-    }
-
-    .tags {
-      color: var(--muted);
-      font-size: .92rem;
-    }
-
-    .system {
-      margin-top: 34px;
-      padding: 28px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: #111827;
-      color: white;
-      overflow-x: auto;
-      font: .82rem/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      white-space: pre;
-    }
-
-    .pubs {
-      display: grid;
-      gap: 0;
-      margin-top: 28px;
-      border-top: 1px solid var(--line);
-    }
-
-    .pub {
-      padding: 19px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .pub em { color: #374151; }
-
-    .education {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 28px;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      overflow: hidden;
-    }
-
-    .education th, .education td {
-      padding: 15px 18px;
-      border-bottom: 1px solid var(--line);
-      text-align: left;
-      vertical-align: top;
-    }
-
-    .education th {
-      color: var(--muted);
-      font-size: .78rem;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-    }
-
-    .education tr:last-child td { border-bottom: 0; }
-
-    footer {
-      padding: 42px 0 58px;
-      color: var(--muted);
-      font-size: .85rem;
-    }
-
-    @media (max-width: 760px) {
-      header { padding: 65px 0 42px; }
-      section { padding: 58px 0; }
-      .container { width: min(calc(100% - 28px), var(--max)); }
-      .stats, .grid, .stack { grid-template-columns: 1fr; }
-      .education { display: block; overflow-x: auto; white-space: nowrap; }
-      .card { padding: 23px; }
-    }
-
-    @media print {
-      nav, .actions { display: none; }
-      header { padding: 30px 0; }
-      section { padding: 35px 0; break-inside: avoid; }
-      body { background: white; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr Harry Patria, PhD, PMP®, PMI-CPMAI® — CV</title>
+<meta name="description" content="Curriculum Vitae of Dr Harry Patria, PhD, PMP®, PMI-CPMAI®. Data and AI Lead, Principal AI Software Engineer, strategist and researcher.">
+<style>
+:root{
+  --bg:#ffffff; --fg:#202124; --muted:#5f6368; --line:#e6e8eb;
+  --accent:#1769aa; --accent2:#0b57d0; --card:#f7f9fb;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.58;font-size:15px;
+}
+a{color:var(--accent2);text-decoration:none}
+a:hover{text-decoration:underline}
+.page{max-width:1050px;margin:0 auto;padding:28px 42px 70px}
+.toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}
+.toolbar .left,.toolbar .right{display:flex;gap:8px;align-items:center}
+button,.button{
+  border:1px solid var(--line);background:var(--bg);color:var(--fg);
+  padding:7px 11px;border-radius:8px;cursor:pointer;font-size:13px
+}
+button.active{background:var(--fg);color:var(--bg)}
+.icon{font-size:18px;border:0}
+header{padding-bottom:24px;border-bottom:1px solid var(--line)}
+h1{font-size:36px;line-height:1.1;margin:0 0 8px;font-weight:750;letter-spacing:-.7px}
+.subtitle{font-size:17px;color:var(--muted);margin-bottom:8px}
+.contact{display:flex;flex-wrap:wrap;gap:5px 14px;color:var(--muted);font-size:13.5px}
+.contact span:not(:last-child)::after{content:" ·";margin-left:14px;color:#b0b4b8}
+.hero{font-size:15px;margin:18px 0 0;max-width:980px}
+section{margin-top:30px}
+h2{
+  font-size:18px;text-transform:uppercase;letter-spacing:.9px;
+  margin:0 0 15px;padding-bottom:7px;border-bottom:1px solid var(--line)
+}
+.summary{font-size:15.5px}
+.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px}
+.skill{padding:11px 13px;background:var(--card);border-radius:9px}
+.skill strong{display:block;font-size:13px;margin-bottom:3px}
+.item{margin:0 0 23px}
+.item:last-child{margin-bottom:0}
+.item-head{display:grid;grid-template-columns:145px 1fr;gap:16px}
+.date{color:var(--muted);font-weight:600;font-size:13px}
+.org{font-weight:750}
+.role{font-style:italic;color:var(--muted);margin-top:1px}
+ul{margin:7px 0 0;padding-left:19px}
+li{margin:3px 0}
+.edu .item-head{grid-template-columns:145px 1fr}
+.meta{color:var(--muted)}
+.cert-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.cert{padding:11px 13px;border:1px solid var(--line);border-radius:9px}
+.cert strong{display:block}
+.small{font-size:13px;color:var(--muted)}
+.publications li{margin-bottom:8px}
+footer{margin-top:45px;padding-top:15px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;text-align:center}
+.compact .details{display:none}
+.compact .item{margin-bottom:15px}
+.compact li{margin:1px 0}
+.compact section{margin-top:23px}
+.dark{
+  --bg:#111315;--fg:#eceff1;--muted:#aab0b6;--line:#30343a;--accent:#8ab4f8;--accent2:#8ab4f8;--card:#191c20
+}
+@media(max-width:760px){
+ .page{padding:20px 18px 50px}
+ .toolbar{margin-bottom:18px}
+ h1{font-size:29px}
+ .skills,.cert-grid{grid-template-columns:1fr}
+ .item-head,.edu .item-head{grid-template-columns:1fr;gap:1px}
+ .contact{display:block}.contact span{display:inline}
+ .contact span:not(:last-child)::after{margin-left:7px}
+}
+@media print{
+ body{font-size:10.5px;color:#000;background:#fff}
+ .page{max-width:none;padding:0 16mm}
+ .toolbar{display:none}
+ header{padding-bottom:12px}
+ h1{font-size:27px}
+ section{margin-top:15px}
+ h2{font-size:13px;margin-bottom:7px}
+ .hero,.summary{font-size:11px}
+ .skills{gap:5px 12px}.skill{padding:6px 8px}
+ .item{margin-bottom:10px}
+ .item-head{grid-template-columns:110px 1fr;gap:8px}
+ ul{margin-top:3px}.item li{margin:0}
+ .cert-grid{gap:5px}.cert{padding:6px 8px}
+ a{color:#000}
+}
+</style>
 </head>
-
 <body>
-  <header>
-    <div class="container">
-      <p class="eyebrow">Data · AI · Engineering · Strategy · Research</p>
-      <h1>Dr Harry Patria, PhD, PMP<sup>®</sup></h1>
-      <p class="title">
-        Data &amp; AI Lead · Principal AI Software Engineer · AI Strategy · Analytics · Research
-      </p>
-      <div class="links">
-        <a href="https://github.com/Harrypatria" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/harry-patria/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://patriaco.co.uk/" target="_blank" rel="noopener">Portfolio</a>
-        <a href="mailto:harry.patria1@gmail.com">Email</a>
-      </div>
+<div class="page" id="page">
+  <div class="toolbar">
+    <div class="left">
+      <button id="simplified" class="active" onclick="setMode('compact')">Simplified</button>
+      <button id="detailed" onclick="setMode('detailed')">Detailed</button>
     </div>
+    <div class="right">
+      <button onclick="window.print()">Save / Print PDF</button>
+      <button class="icon" title="Toggle dark mode" onclick="toggleDark()">☾</button>
+    </div>
+  </div>
+
+  <header>
+    <h1>Dr Harry Patria, PhD, PMP®, PMI-CPMAI®</h1>
+    <div class="subtitle">Data &amp; AI Lead · Principal AI Software Engineer · AI Strategy · Analytics · Research</div>
+    <div class="contact">
+      <span><a href="mailto:harry.patria1@gmail.com">harry.patria1@gmail.com</a></span>
+      <span>+44 7818 917 550</span>
+      <span><a href="https://uk.linkedin.com/in/harry-patria" target="_blank">LinkedIn</a></span>
+      <span><a href="https://github.com/Harrypatria" target="_blank">GitHub</a></span>
+      <span><a href="https://patriaco.co.uk/" target="_blank">Portfolio / Patria &amp; Co.</a></span>
+    </div>
+    <div class="small" style="margin-top:8px">UK PhD Post-Study Work Visa · 3-year permission · No sponsorship required · Ready to relocate</div>
+    <p class="hero">
+      Experienced Data and AI Lead with 18+ years of experience progressing from engineering to business analytics,
+      machine learning and AI software engineering. Experienced in scalable data pipelines, predictive modelling,
+      AI agents, retrieval and analytical systems, production deployment and business strategy. Proven delivery of
+      AI and analytics initiatives with measurable improvements in predictive accuracy, operational efficiency and
+      decision-making speed.
+    </p>
   </header>
 
-  <nav>
-    <div class="container">
-      <a href="#about">About</a>
-      <a href="#cv">CV</a>
-      <a href="#ai">AI Engineering</a>
-      <a href="#work">Selected Work</a>
-      <a href="#research">Research</a>
-      <a href="#education">Education</a>
-      <a href="#connect">Connect</a>
+  <section>
+    <h2>Core Expertise</h2>
+    <div class="skills">
+      <div class="skill"><strong>AI &amp; Machine Learning</strong>Agentic AI, LLM applications, RAG, GraphRAG, anomaly detection, predictive modelling, neural networks, XGBoost, LightGBM, TensorFlow, PyTorch, scikit-learn.</div>
+      <div class="skill"><strong>Data &amp; Analytics</strong>Statistics, data wrangling, feature engineering, forecasting, clustering, optimisation, experimental design, A/B testing, business intelligence.</div>
+      <div class="skill"><strong>Engineering &amp; MLOps</strong>Python, R, SQL, Spark, distributed computing, CI/CD, MLflow, Docker, Kubernetes, model monitoring and production deployment.</div>
+      <div class="skill"><strong>Cloud &amp; Visualisation</strong>Google Cloud, Azure, Power BI, Tableau, Matplotlib, Seaborn, Streamlit; scalable analytical and AI platforms.</div>
+      <div class="skill"><strong>Strategy &amp; Leadership</strong>AI strategy, digital transformation, corporate planning, business development, scenario planning, stakeholder engagement and cross-functional leadership.</div>
+      <div class="skill"><strong>Project &amp; AI Governance</strong>PMP®, PMI-CPMAI®, AI evaluation, model optimisation, AI solution architecture, delivery governance and organisational upskilling.</div>
     </div>
-  </nav>
+  </section>
 
-  <main>
-    <section id="about">
-      <div class="container">
-        <div class="section-label">01 · About</div>
-        <h2>Engineering → Data → AI → Strategy → Decision Intelligence</h2>
-        <p class="lead">
-          I build <strong>data, AI and decision systems</strong> that connect analytical
-          intelligence with real-world business and engineering problems.
-        </p>
-        <p class="lead">
-          My work spans <strong>Agentic AI, machine learning, predictive analytics,
-          retrieval systems, AI software architecture, data platforms, MLOps and
-          strategic decision-making</strong> — from early engineering and energy systems
-          through to production AI.
-        </p>
-        <div class="quote">
-          Engineering → Data → AI → Strategy → Decision Intelligence
-        </div>
+  <section>
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert"><strong>Project Management Professional (PMP)®</strong><span class="small">Project Management Institute · Feb 2026</span></div>
+      <div class="cert"><strong>PMI Certified Professional in Managing AI (PMI-CPMAI)™</strong><span class="small">Project Management Institute · Jan 2026</span></div>
+      <div class="cert"><strong>Google Generative AI Leader</strong><span class="small">Google · Jan 2026</span></div>
+      <div class="cert"><strong>Microsoft Power BI Data Analyst Associate</strong><span class="small">Microsoft · Dec 2025</span></div>
+      <div class="cert"><strong>Databricks Lakehouse Fundamentals</strong><span class="small">Databricks · Feb 2026</span></div>
+    </div>
+  </section>
 
-        <div class="stats">
-          <div class="stat"><strong>18+</strong><span>Years across engineering, analytics, AI, strategy and research</span></div>
-          <div class="stat"><strong>50+</strong><span>AI and data projects</span></div>
-          <div class="stat"><strong>70+</strong><span>Predictive models</span></div>
-          <div class="stat"><strong>300+</strong><span>Professionals trained</span></div>
-        </div>
-      </div>
-    </section>
+  <section>
+    <h2>Work Experience</h2>
 
-    <section id="cv">
-      <div class="container">
-        <div class="section-label">02 · Curriculum Vitae</div>
-        <h2>Professional profile, in two formats.</h2>
-        <p class="lead">
-          The repository CV provides a concise professional record, while the interactive
-          version presents the same profile as a browser-based experience.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="./harry-patria-cv.pdf">→ View CV</a>
-          <a class="button" href="https://harrypatria.github.io/CV/" target="_blank" rel="noopener">→ Interactive CV</a>
-        </div>
-      </div>
-    </section>
+    <div class="item">
+      <div class="item-head"><div class="date">2026 – Present</div><div><div class="org">i-Vigilant Technologies</div><div class="role">Principal AI Software Engineer · Aberdeen, Scotland, UK</div></div></div>
+      <ul class="details">
+        <li>Led AI modelling for the AI Smart Meter Analytics (AI-SMA) and Ultrasonic Meter platform across 20+ utility customers, achieving a 94% detection rate and approximately 15% fewer false positives than the legacy rules engine.</li>
+        <li>Built the analytical layer covering machine learning, reasoning, summary and retrieval; comparative evaluation across XGBoost, LightGBM and small transformer variants improved reporting accuracy by approximately 10 percentage points over the earlier standardised baseline.</li>
+        <li>Developed the AI Smart Reporting knowledge layer from instrument telemetry, academic papers and user traces, integrating LLM ontology, evaluation harnessing and GraphRAG for retrieval and summarisation.</li>
+        <li>Production reporting now runs at Shell and BP, delivering approximately 10× faster report generation and reducing analyst effort by about 80%; evaluated GPT, Claude, Llama and Qwen for internal energy queries at 89% evaluation accuracy.</li>
+        <li>Designed the AI software architecture that won the Equinor Brazil tender valued at £1M+, serving as the sole Principal AI Software Engineer in a four-person expert team.</li>
+      </ul>
+    </div>
 
-    <section id="ai">
-      <div class="container">
-        <div class="section-label">03 · AI Engineering</div>
-        <h2>Agentic AI systems beyond a single model.</h2>
-        <p class="lead">
-          Designing AI systems by combining <strong>agents, retrieval, augmentation,
-          reasoning, evaluation and production software engineering</strong>.
-        </p>
+    <div class="item">
+      <div class="item-head"><div class="date">2021 – Present</div><div><div class="org">Patria &amp; Co. PT. Strategi Transforma Infiniti</div><div class="role">Chief Data and AI · <a href="https://patriaco.co.uk/" target="_blank">patriaco.co.uk</a> · <a href="https://convergeni.com/" target="_blank">convergeni.com</a></div></div></div>
+      <ul class="details">
+        <li>Led 50+ AI and data science projects, applying machine learning and predictive analytics to improve demand forecasting accuracy by up to 30%, customer segmentation by 40%, and user engagement by 15% through recommendation systems.</li>
+        <li>Built and deployed 70+ predictive models using Python, TensorFlow, PyTorch and scikit-learn, improving forecasting efficiency and reducing decision-making time for business leaders.</li>
+        <li>Designed automated CI/CD pipelines, reducing model retraining time by 60% and improving production reliability.</li>
+        <li>Developed scalable data pipelines and feature-engineering workflows with 95% data accuracy for downstream machine learning applications.</li>
+        <li>Created Power BI and Tableau dashboards enabling real-time data-driven decisions and approximately 20% faster response to market changes.</li>
+        <li>Conducted A/B testing and experimental design, optimising pricing and engagement metrics and achieving a 12% increase in conversion rates.</li>
+        <li>Integrated Google Cloud and Azure AI solutions, reducing infrastructure costs by 25% while improving monitoring and performance metrics.</li>
+        <li>Designed corporate masterclasses in Agentic AI, RAG, Data Analytics and Machine Learning, upskilling 300+ professionals.</li>
+      </ul>
+    </div>
 
-        <div class="system">┌──────────────────────────────────────────────────────────────┐
-│                     AGENTIC AI SYSTEM                       │
-├──────────────┬──────────────┬──────────────┬────────────────┤
-│   Retrieval  │ Augmentation │  Reasoning   │   Evaluation   │
-├──────────────┴──────────────┴──────────────┴────────────────┤
-│             Knowledge · Data · Models · Tools               │
-├──────────────────────────────────────────────────────────────┤
-│          API · Backend · Analytical Layer · Frontend        │
-├──────────────────────────────────────────────────────────────┤
-│        MLOps · Cloud · Monitoring · AI Guardrails            │
-└──────────────────────────────────────────────────────────────┘</div>
+    <div class="item">
+      <div class="item-head"><div class="date">2022 – 2024</div><div><div class="org">Startup Campus</div><div class="role">Data Science and AI Lead · <a href="https://startupcampus.id/" target="_blank">startupcampus.id</a></div></div></div>
+      <ul class="details"><li>Trained 250+ professionals in machine learning, statistical modelling and MLOps.</li><li>Guided students in predictive modelling and data-driven platform development using scikit-learn and PyTorch.</li><li>Led workshops covering hypothesis testing, statistical analysis, regression, clustering and optimisation.</li></ul>
+    </div>
 
-        <div class="stack">
-          <div class="stack-item">
-            <strong>Languages &amp; data</strong>
-            <div class="tags">Python · R · SQL · Statistics · Data Wrangling · Feature Engineering</div>
-          </div>
-          <div class="stack-item">
-            <strong>Machine learning</strong>
-            <div class="tags">scikit-learn · TensorFlow · PyTorch · XGBoost · LightGBM · Transformers</div>
-          </div>
-          <div class="stack-item">
-            <strong>AI systems</strong>
-            <div class="tags">Agentic AI · LLM Applications · RAG · GraphRAG · Knowledge Graphs · Anomaly Detection</div>
-          </div>
-          <div class="stack-item">
-            <strong>Data &amp; analytics</strong>
-            <div class="tags">Spark · Predictive Analytics · Forecasting · Clustering · Optimisation · A/B Testing</div>
-          </div>
-          <div class="stack-item">
-            <strong>Engineering &amp; MLOps</strong>
-            <div class="tags">CI/CD · MLflow · Docker · Kubernetes · Model Monitoring</div>
-          </div>
-          <div class="stack-item">
-            <strong>Cloud &amp; visualisation</strong>
-            <div class="tags">Google Cloud · Azure · Power BI · Tableau · Matplotlib · Seaborn · Streamlit</div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="item">
+      <div class="item-head"><div class="date">2020 – 2023</div><div><div class="org">PT Indeks Komoditas Indonesia · Coalindo Energy subsidiary</div><div class="role">Data Scientist · <a href="https://coalindoenergy.com/" target="_blank">coalindoenergy.com</a></div></div></div>
+      <ul class="details"><li>Built analytical platforms using the global UN Comtrade database to identify patterns and trendlines across CPO and minerals.</li><li>Designed modelling and forecasting platforms to support business recommendations.</li><li>Conducted workshops for analysts and stakeholders to unlock the use of analytics.</li></ul>
+    </div>
 
-    <section id="work">
-      <div class="container">
-        <div class="section-label">04 · Selected Work</div>
-        <div class="grid">
-          <article class="card">
-            <h3>AI Smart Meter Analytics</h3>
-            <div class="role">Principal AI Software Engineer · i-Vigilant Technologies</div>
-            <ul>
-              <li>AI modelling across <strong>20+ utility customers</strong></li>
-              <li><strong>94% detection rate</strong></li>
-              <li>~<strong>15% fewer false positives</strong> than the legacy rules engine</li>
-              <li>Analytical layer spanning machine learning, reasoning, summary and retrieval</li>
-              <li>Production AI reporting at <strong>Shell and BP</strong></li>
-              <li>~<strong>10× faster</strong> report generation and ~<strong>80% reduction</strong> in analyst effort</li>
-              <li>AI architecture contributed to winning the <strong>Equinor Brazil £1M+ tender</strong></li>
-            </ul>
-          </article>
+    <div class="item">
+      <div class="item-head"><div class="date">2020</div><div><div class="org">BINUS University · Universitas Indonesia · Institut Teknologi Bandung · ITS Surabaya</div><div class="role">Faculty Member and Lecturer</div></div></div>
+      <ul class="details"><li>Taught data science, strategy, design thinking, renewable and sustainable energy, and innovation technology to 700+ graduate students across four leading Indonesian universities.</li></ul>
+    </div>
 
-          <article class="card">
-            <h3>AI &amp; Data Transformation</h3>
-            <div class="role">Chief Data and AI · Patria &amp; Co.</div>
-            <ul>
-              <li>Led <strong>50+ AI and data science projects</strong></li>
-              <li>Built and deployed <strong>70+ predictive models</strong></li>
-              <li>Improved demand forecasting accuracy by up to <strong>30%</strong></li>
-              <li>Improved customer segmentation by <strong>40%</strong></li>
-              <li>Designed CI/CD pipelines reducing model retraining time by <strong>60%</strong></li>
-              <li>Built scalable data pipelines achieving <strong>95% data accuracy</strong></li>
-              <li>Delivered AI/data masterclasses to <strong>300+ professionals</strong></li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
+    <div class="item">
+      <div class="item-head"><div class="date">2020 – 2021</div><div><div class="org">Berdikari (Persero) – State-owned Enterprise</div><div class="role">Vice President, Corporate Planning and Business Development</div></div></div>
+      <ul class="details"><li>Directed strategic initiatives and corporate planning during the pandemic, contributing to 15% year-on-year growth through digital transformation, diversification and strategic partnerships.</li><li>Initiated intelligence dashboards for Sales, Operations and Risk Management using clustering, customer profiling, market forecasting and financial modelling.</li></ul>
+    </div>
 
-    <section id="research">
-      <div class="container">
-        <div class="section-label">05 · Research</div>
-        <h2>Cognition, scenario planning, data science, AI and strategic decision-making.</h2>
-        <p class="lead">
-          My research sits at the intersection of cognition, scenario planning, data science,
-          AI and strategic decision-making.
-        </p>
+    <div class="item">
+      <div class="item-head"><div class="date">2018 – 2020</div><div><div class="org">Elnusa Petrofin · Pertamina Group</div><div class="role">Senior Manager, Corporate Planning · <a href="https://www.petrofin.co.id/" target="_blank">petrofin.co.id</a></div></div></div>
+      <ul class="details"><li>Advocated digital adoption of analytical insights among senior and mid-level management, contributing to portfolio diversification and 10% annual growth.</li><li>Led annual and long-term strategic planning and budgeting through focus groups, management reviews, scenario planning and performance management.</li></ul>
+    </div>
 
-        <div class="pubs">
-          <div class="pub"><em>Team Diversity in Scenario Planning: Theoretical Insights and Implications for Team Composition</em> — Edward Elgar Publishing, 2025.</div>
-          <div class="pub"><em>Deep learning for vision screening in resource-limited settings</em> — Frontiers in Computer Science, 2025.</div>
-          <div class="pub"><em>Feature Selection and Sensitivity Analysis of Oversampling in Big and Highly Imbalanced Bank's Credit Data</em> — IEEE ICoICT, 2022.</div>
-          <div class="pub"><em>Bayesian Regression for Predicting Price: Empirical Evidence in American Real Estate</em> — Data Science: Journal of Computing and Applied Informatics, 2023.</div>
-          <div class="pub"><em>Agentic AI: Building AI agents and retrieval systems</em> — Convergeni, 2026.</div>
-          <div class="pub"><em>Agentic AI engineering handbook: A handbook for building AI software and databases</em> — Convergeni, 2026.</div>
-        </div>
+    <div class="item">
+      <div class="item-head"><div class="date">2015 – 2018</div><div><div class="org">Elektrindo Perkasa Utama and Eramas Persada Energy</div><div class="role">Senior Manager, Business Development · <a href="https://www.epu.co.id/" target="_blank">epu.co.id</a></div></div></div>
+      <ul class="details"><li>Formed three ventures through corporate consortia, progressing projects toward auction qualification for 100 MW Jambi Peaker and 250 MW Riau Peaker gas power plants and initiating a 1.5 MWp solar PV business using an Energy Service Company model.</li><li>Enhanced investment strategy through project budgeting, financial optimisation, Monte Carlo simulation and sensitivity analysis.</li></ul>
+    </div>
 
-        <div class="actions">
-          <a class="button" href="https://scholar.google.com/citations?user=OJVjCmsAAAAJ&hl=en" target="_blank" rel="noopener">
-            → Google Scholar · 200+ citations · h-index 9
-          </a>
-        </div>
-      </div>
-    </section>
+    <div class="item">
+      <div class="item-head"><div class="date">2010 – 2015</div><div><div class="org">SKK Migas · Pertamina Gas Negara (PGN) · PT Singgar Mulia Engineering</div><div class="role">Senior Analyst and Process Engineer · <a href="https://www.skkmigas.go.id/" target="_blank">skkmigas.go.id</a></div></div></div>
+      <ul class="details"><li>Organised major LNG players including Pertamina, BP Tangguh, Shell, PGN and ENI to improve LNG export and domestic-market balance.</li><li>Headed ministry-assigned teams conducting technology and commercial due diligence at five regasification terminals.</li><li>Optimised government split in 10+ Gas Sales Agreements using financial models, Excel Solver and sensitivity analysis.</li></ul>
+    </div>
 
-    <section id="education">
-      <div class="container">
-        <div class="section-label">06 · Education &amp; Credentials</div>
-        <h2>Academic foundation across engineering, economics, strategy, data and AI.</h2>
+    <div class="item">
+      <div class="item-head"><div class="date">2009 – 2010</div><div><div class="org">Tetra Pak Stainless Equipment</div><div class="role">Process Design Engineer · <a href="https://www.tetrapak.com/" target="_blank">tetrapak.com</a></div></div></div>
+      <ul class="details"><li>Designed manufacturing skids through process CAD drawings, calculations, simulation, process design, bills of material and project implementation.</li><li>Coordinated electrical, instrumentation and mechanical engineering teams to deliver projects on time, budget, scope and revenue.</li></ul>
+    </div>
 
-        <table class="education">
-          <thead>
-            <tr><th>Year</th><th>Degree</th><th>Institution</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>2022–2026</td><td><strong>PhD, Cognition and Scenario Planning</strong></td><td>University of Strathclyde</td></tr>
-            <tr><td>2023–2025</td><td><strong>MSc, Business Analytics — Distinction</strong></td><td>Imperial College London</td></tr>
-            <tr><td>2021–2022</td><td><strong>MSc, Data Science — Distinction</strong></td><td>Newcastle University</td></tr>
-            <tr><td>2017–2020</td><td><strong>PhD, Strategic Management</strong></td><td>Universitas Indonesia</td></tr>
-            <tr><td>2013–2015</td><td><strong>MSc, Economics — Distinction</strong></td><td>Universitas Indonesia</td></tr>
-            <tr><td>2009–2011</td><td><strong>MEng, Chemical Engineering</strong></td><td>Universitas Indonesia</td></tr>
-            <tr><td>2003–2008</td><td><strong>BEng, Chemical Engineering</strong></td><td>Institut Teknologi Bandung</td></tr>
-          </tbody>
-        </table>
+    <div class="item">
+      <div class="item-head"><div class="date">2008 – 2009</div><div><div class="org">RPE-Engineering</div><div class="role">Jr. Process Engineer · <a href="https://www.rpe-engineering.com/" target="_blank">rpe-engineering.com</a></div></div></div>
+      <ul class="details"><li>Supported detailed design and FEED projects for compressor replacement, onshore vessel facilities and offshore gas processing platforms through process rating, simulation and safety analysis.</li><li>Performed HYSYS process simulation and TGNET / Pipeline Studio pipeline simulation to optimise offshore-pipeline-onshore configurations.</li></ul>
+    </div>
+  </section>
 
-        <div class="stack" style="margin-top:18px">
-          <div class="stack-item"><strong>Credentials</strong><div class="tags">PMP® · PMI-CPMAI™ · Google Generative AI Leader · Microsoft Power BI Data Analyst Associate · Databricks Lakehouse Fundamentals</div></div>
-          <div class="stack-item"><strong>Selected recognition</strong><div class="tags">Rising Star and Alumni Award, Vice-Chancellor, Newcastle University — 2025 · 1st Winner, Data Scientist, UK Maritime Week Innovation — 2022 · Best Innovator and Employee of the Year, Elnusa Petrofin — 2018</div></div>
-        </div>
-      </div>
-    </section>
+  <section class="edu">
+    <h2>Education</h2>
+    <div class="item"><div class="item-head"><div class="date">2022 – 2026</div><div><div class="org">University of Strathclyde · Glasgow, UK</div><div class="role">PhD in Cognition and Scenario Planning</div><div class="meta">Fully funded Excellence Scholarship and stipend, UK Research and Innovation (UKRI). PhD viva passed 2 September 2026.</div></div></div></div>
+    <div class="item"><div class="item-head"><div class="date">2023 – 2025</div><div><div class="org">Imperial College London · Imperial Business School</div><div class="role">MSc Business Analytics · Distinction</div><div class="meta">Imperial Excellence Scholarship. Thesis: Advanced Recommendation Systems: Knowledge Graph &amp; Agent AI.</div></div></div></div>
+    <div class="item"><div class="item-head"><div class="date">2021 – 2022</div><div><div class="org">Newcastle University · School of Computing</div><div class="role">MSc Data Science · Distinction</div><div class="meta">Student Excellence Vice-Chancellor Scholarship. Dissertation: Missingness Pattern and Exploration using Global Energy Data.</div></div></div></div>
+    <div class="item"><div class="item-head"><div class="date">2017 – 2020</div><div><div class="org">Universitas Indonesia · Faculty of Economics and Business</div><div class="role">PhD Strategic Management</div><div class="meta">Fully funded scholarship and Outstanding PhD Graduate. GPA 3.88/4.00. Thesis: Strategic Decision in the Energy Sector.</div></div></div></div>
+    <div class="item"><div class="item-head"><div class="date">2013 – 2015</div><div><div class="org">Universitas Indonesia</div><div class="role">MSc Economics · Distinction · GPA 3.79/4.00</div><div class="meta">Best Thesis of the Year; Best Paper in LPEM ADB Economic Forum; Dean’s List. Thesis: Oil Exploration Economics.</div></div></div></div>
+    <div class="item"><div class="item-head"><div class="date">2009 – 2011</div><div><div class="org">Universitas Indonesia</div><div class="role">MEng Chemical Engineering · GPA 3.57/4.00</div><div class="meta">Dissertation in gas processing, simulation and economic evaluation.</div></div></div></div>
+    <div class="item"><div class="item-head"><div class="date">2003 – 2008</div><div><div class="org">Institut Teknologi Bandung</div><div class="role">BEng Chemical Engineering</div><div class="meta">Research on heat propagation in a reversed-flow reactor using experiments and process simulations.</div></div></div></div>
+  </section>
 
-    <section id="connect">
-      <div class="container">
-        <div class="section-label">07 · Connect</div>
-        <h2>Let’s build useful intelligence.</h2>
-        <p class="lead">
-          If you are working on <strong>Agentic AI, AI engineering, data science, analytics,
-          strategic decision systems or applied AI research</strong>, I’d be happy to connect.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="https://www.linkedin.com/in/harry-patria/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="button" href="https://patriaco.co.uk/" target="_blank" rel="noopener">Portfolio</a>
-          <a class="button" href="https://scholar.google.com/citations?user=OJVjCmsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-          <a class="button" href="mailto:harry.patria1@gmail.com">Email</a>
-        </div>
-      </div>
-    </section>
-  </main>
+  <section>
+    <h2>Selected Achievements</h2>
+    <ul>
+      <li><strong>2025 — Rising Star and Alumni Award</strong>, Vice-Chancellor, Newcastle University.</li>
+      <li><strong>2022 — 1st Winner, Data Scientist</strong>, UK Maritime Week Innovation, Newcastle, UK.</li>
+      <li><strong>2018 — Best Innovator and Employee of the Year</strong>, Elnusa Petrofin; designed and automated the BizGen platform to optimise business and operational decisions.</li>
+    </ul>
+  </section>
+
+  <section class="publications">
+    <h2>Selected Publications &amp; Research</h2>
+    <div class="small" style="margin-bottom:9px">Google Scholar: 200+ citations · h-index 9 · <a href="https://scholar.google.com/citations?user=OJVjCmsAAAAJ&hl=en" target="_blank">Google Scholar profile</a></div>
+    <ul>
+      <li>Syauqie, M., Patria, H., Hastono, S. P., Siregar, K. N., &amp; Moeloek, N. D. F. (2025). <em>Deep learning for vision screening in resource-limited settings: development of multi-branch CNN for refractive error detection based on smartphone image.</em> Frontiers in Computer Science, 7, 1576958.</li>
+      <li>Syauqie, M., Hastono, S. P., Siregar, K. N., Moeloek, N. D. F., &amp; Patria, H. (2025). <em>Development of High-Accuracy Refractive Error Screening Model in Low-Resource Environments.</em></li>
+      <li>Patria, H., &amp; Tapinos, E. (2025). <em>Team Diversity in Scenario Planning: Theoretical Insights and Implications for Team Composition.</em> In <em>Improving and Enhancing Scenario Planning</em>, Edward Elgar Publishing, pp. 266–285.</li>
+      <li>Kurniawan, A., Rifa'i, A., Nafis, M. A., Andriaswuri, N. S., Patria, H., &amp; Purwitasari, D. (2022). <em>Feature Selection and Sensitivity Analysis of Oversampling in Big and Highly Imbalanced Bank's Credit Data.</em> ICoICT, IEEE, pp. 35–40.</li>
+      <li>Patria, H. (2023). <em>Bayesian Regression for Predicting Price: Empirical Evidence in American Real Estate.</em> Data Science: Journal of Computing and Applied Informatics, 7(1), 15–23.</li>
+      <li>Patria, H. (2026). <em>Agentic AI: Building AI agents and retrieval systems, a masterclass in LLM agents, RAG, and production deployment.</em> Convergeni. <a href="https://doi.org/10.5281/zenodo.22049522" target="_blank">DOI</a>.</li>
+      <li>Patria, H. (2026). <em>Agentic AI engineering handbook: A handbook for building AI software and databases.</em> Convergeni by Patria &amp; Co. <a href="https://doi.org/10.5281/zenodo.22139547" target="_blank">DOI</a>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Professional Networks</h2>
+    <ul>
+      <li>Project Management Institute — UK Chapter and Indonesia Chapter</li>
+      <li>British Academy of Management (BAM) and The Operational Research Society UK</li>
+      <li>Indonesia Strategic Management Society (ISMS) — <a href="https://isms.or.id/" target="_blank">isms.or.id</a></li>
+      <li>Scenario for Tomorrow — <a href="https://scenarios.farhub.org/contributors/" target="_blank">Contributor profile</a></li>
+    </ul>
+  </section>
 
   <footer>
-    <div class="container">
-      Dr Harry Patria · Data &amp; AI · Engineering · Strategy · Research
-    </div>
+    Dr Harry Patria, PhD, PMP®, PMI-CPMAI® · Curriculum Vitae · Updated September 2026
   </footer>
+</div>
+
+<script>
+function setMode(mode){
+  const page=document.getElementById('page');
+  page.classList.toggle('compact',mode==='compact');
+  document.getElementById('simplified').classList.toggle('active',mode==='compact');
+  document.getElementById('detailed').classList.toggle('active',mode==='detailed');
+}
+function toggleDark(){document.body.classList.toggle('dark')}
+setMode('compact');
+</script>
 </body>
 </html>
