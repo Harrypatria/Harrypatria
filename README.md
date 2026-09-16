@@ -29,20 +29,6 @@
 
 </div>
 
----
-
-## 👋 About
-
-I build **data, AI and decision systems** that connect analytical intelligence with real-world business and engineering problems.
-
-My work spans **Agentic AI, machine learning, predictive analytics, retrieval systems, AI software architecture, data platforms, MLOps and strategic decision-making** — from early engineering and energy systems through to production AI.
-
-> **Engineering → Data → AI → Strategy → Decision Intelligence**
-
-**18+ years** across engineering, analytics, AI, corporate strategy and applied research · **50+ AI/data projects** · **70+ predictive models** · **300+ professionals trained**
-
----
-
 ## Curriculum Vitae
 
 <div align="center">
