@@ -51,7 +51,7 @@ My work spans **Agentic AI, machine learning, predictive analytics, retrieval sy
 
 A detailed CV is available in the repository and can be opened directly from this profile.
 
-**[→ View CV](./CV/harry-patria-cv.pdf)** &nbsp;&nbsp; **[→ Interactive CV](https://harrypatria.github.io/CV/index.html)**
+**[→ View CV](./CV/harry-patria-cv.pdf)** 
 
 </div>
 
@@ -65,32 +65,17 @@ Designing AI systems beyond a single model — combining **agents, retrieval, au
 
 ```text
 ┌──────────────────────────────────────────────────────────────┐
-│                     AGENTIC AI SYSTEM                       │
-├──────────────┬──────────────┬──────────────┬────────────────┤
-│   Retrieval  │ Augmentation │  Reasoning   │   Evaluation   │
-├──────────────┴──────────────┴──────────────┴────────────────┤
-│             Knowledge · Data · Models · Tools               │
+│                     AGENTIC AI SYSTEM                        │
+├──────────────┬──────────────┬──────────────┬─────────────────┤
+│   Retrieval  │ Augmentation │  Reasoning   │   Evaluation    │
+├──────────────┴──────────────┴──────────────┴─────────────────┤
+│             Knowledge · Data · Models · Tools                │
 ├──────────────────────────────────────────────────────────────┤
-│          API · Backend · Analytical Layer · Frontend        │
+│          API · Backend · Analytical Layer · Frontend         │
 ├──────────────────────────────────────────────────────────────┤
 │        MLOps · Cloud · Monitoring · AI Guardrails            │
 └──────────────────────────────────────────────────────────────┘
 ```
-
-## Connect
-
-If you are working on **Agentic AI, AI engineering, data science, analytics, strategic decision systems or applied AI research**, I'd be happy to connect.
-
-<div align="center">
-
-**[LinkedIn](https://www.linkedin.com/in/harry-patria/)** ·
-**[Portfolio](https://patriaco.co.uk/)** ·
-**[Google Scholar](https://scholar.google.com/citations?user=OJVjCmsAAAAJ&hl=en)** ·
-**[Email](mailto:harry.patria1@gmail.com)**
-
-</div>
-
----
 
 <div align="center">
 <sub>Dr Harry Patria · Data & AI · Engineering · Strategy · Research</sub>
