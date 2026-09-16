@@ -51,7 +51,7 @@ My work spans **Agentic AI, machine learning, predictive analytics, retrieval sy
 
 A detailed CV is available in the repository and can be opened directly from this profile.
 
-**[→ View CV](./CV/harry-patria-cv.pdf)** &nbsp;&nbsp; **[→ Interactive CV](https://harrypatria.github.io/CV/)**
+**[→ View CV](./CV/harry-patria-cv.pdf)** &nbsp;&nbsp; **[→ Interactive CV](https://harrypatria.github.io/CV/index.html)**
 
 </div>
 
