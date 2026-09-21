@@ -31,3 +31,22 @@ Designing AI systems beyond a single model. Combining **agents, retrieval, augme
 <div align="center">
 <sub> Data & AI · Engineering · Strategy · Research</sub>
 </div>
+
+## 🛠 Tech Stack
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Python-18181B?style=flat-square&logo=python&logoColor=white&labelColor=18181B" height="30"/>
+<img src="https://img.shields.io/badge/PyTorch-18181B?style=flat-square&logo=pytorch&logoColor=white&labelColor=18181B" height="30"/>
+<img src="https://img.shields.io/badge/LangChain-18181B?style=flat-square&logo=langchain&logoColor=white&labelColor=18181B" height="30"/>
+<img src="https://img.shields.io/badge/OpenAI-18181B?style=flat-square&logo=openai&logoColor=white&labelColor=18181B" height="30"/>
+<img src="https://img.shields.io/badge/AWS-18181B?style=flat-square&logo=amazonaws&logoColor=white&labelColor=18181B" height="30"/>
+<img src="https://img.shields.io/badge/Docker-18181B?style=flat-square&logo=docker&logoColor=white&labelColor=18181B" height="30"/>
+<img src="https://img.shields.io/badge/Kubernetes-18181B?style=flat-square&logo=kubernetes&logoColor=white&labelColor=18181B" height="30"/>
+<img src="https://img.shields.io/badge/PostgreSQL-18181B?style=flat-square&logo=postgresql&logoColor=white&labelColor=18181B" height="30"/>
+<img src="https://img.shields.io/badge/FastAPI-18181B?style=flat-square&logo=fastapi&logoColor=white&labelColor=18181B" height="30"/>
+<img src="https://img.shields.io/badge/React-18181B?style=flat-square&logo=react&logoColor=white&labelColor=18181B" height="30"/>
+<img src="https://img.shields.io/badge/Next.js-18181B?style=flat-square&logo=nextdotjs&logoColor=white&labelColor=18181B" height="30"/>
+<img src="https://img.shields.io/badge/Git-18181B?style=flat-square&logo=git&logoColor=white&labelColor=18181B" height="30"/>
+
+</div>
