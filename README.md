@@ -20,6 +20,12 @@
 <img src="https://img.shields.io/badge/React-18181B?style=flat-square&logo=react&logoColor=white&labelColor=18181B" height="30"/>
 <img src="https://img.shields.io/badge/Next.js-18181B?style=flat-square&logo=nextdotjs&logoColor=white&labelColor=18181B" height="30"/>
 <img src="https://img.shields.io/badge/Git-18181B?style=flat-square&logo=git&logoColor=white&labelColor=18181B" height="30"/>
+<img src="https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white&labelColor=276DC3" height="30"/>
+<img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black&labelColor=F2C811" height="30"/>
+<img src="https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white&labelColor=E97627" height="30"/>
+<img src="https://img.shields.io/badge/AMPL-0A66C2?style=flat-square&logoColor=white&labelColor=0A66C2" height="30"/>
+<img src="https://img.shields.io/badge/AMOS-C71A36?style=flat-square&logoColor=white&labelColor=C71A36" height="30"/>
+<img src="https://img.shields.io/badge/LISREL-1B4F72?style=flat-square&logoColor=white&labelColor=1B4F72" height="30"/>
 
 </div>
 
