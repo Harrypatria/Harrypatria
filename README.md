@@ -8,25 +8,25 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Python-18181B?style=flat-square&logo=python&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/PyTorch-18181B?style=flat-square&logo=pytorch&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/LangChain-18181B?style=flat-square&logo=langchain&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/OpenAI-18181B?style=flat-square&logo=openai&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/AWS-18181B?style=flat-square&logo=amazonaws&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/Docker-18181B?style=flat-square&logo=docker&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/SQL-18181B?style=flat-square&logo=sqlite&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/Kubernetes-18181B?style=flat-square&logo=kubernetes&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/PostgreSQL-18181B?style=flat-square&logo=postgresql&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/FastAPI-18181B?style=flat-square&logo=fastapi&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/React-18181B?style=flat-square&logo=react&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/Next.js-18181B?style=flat-square&logo=nextdotjs&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/Git-18181B?style=flat-square&logo=git&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/R-18181B?style=flat-square&logo=r&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/Power%20BI-18181B?style=flat-square&logo=powerbi&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/Tableau-18181B?style=flat-square&logo=tableau&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/AMPL-18181B?style=flat-square&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/AMOS-18181B?style=flat-square&logoColor=white&labelColor=18181B" height="30"/>
-<img src="https://img.shields.io/badge/LISREL-18181B?style=flat-square&logoColor=white&labelColor=18181B" height="30"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=black" height="30"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=sqlite&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" height="30"/>
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" height="30"/>
+<img src="https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/AMPL-0A66C2?style=flat-square&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/AMOS-C71A36?style=flat-square&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/LISREL-1B4F72?style=flat-square&logoColor=white" height="30"/>
 
 </div>
 
