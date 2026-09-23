@@ -64,7 +64,7 @@ Designing AI systems beyond a single model. Combining **agents, retrieval, augme
 <img src="https://img.shields.io/badge/Reasoning-3E4A89?style=for-the-badge&logoColor=white" height="36"/>
 <img src="https://img.shields.io/badge/Evaluation-31688E?style=for-the-badge&logoColor=white" height="36"/>
 
-<br><br>
+<br>
 
 <!-- Layer 2 • Knowledge Foundation -->
 <img src="https://img.shields.io/badge/Knowledge-26828E?style=flat-square&logoColor=white" height="30"/>
@@ -72,7 +72,7 @@ Designing AI systems beyond a single model. Combining **agents, retrieval, augme
 <img src="https://img.shields.io/badge/Models-35B779?style=flat-square&logoColor=white" height="30"/>
 <img src="https://img.shields.io/badge/Tools-6DCD59?style=flat-square&logoColor=black" height="30"/>
 
-<br><br>
+<br>
 
 <!-- Layer 3 • Application Stack -->
 <img src="https://img.shields.io/badge/API-1F9E89?style=flat-square&logoColor=white" height="28"/>
@@ -80,7 +80,7 @@ Designing AI systems beyond a single model. Combining **agents, retrieval, augme
 <img src="https://img.shields.io/badge/Analytical%20Layer-6DCD59?style=flat-square&logoColor=black" height="28"/>
 <img src="https://img.shields.io/badge/Frontend-B4DE2C?style=flat-square&logoColor=black" height="28"/>
 
-<br><br>
+<br>
 
 <!-- Layer 4 • Operations & Reliability -->
 <img src="https://img.shields.io/badge/MLOps-6DCD59?style=flat-square&logoColor=black" height="26"/>
@@ -88,7 +88,7 @@ Designing AI systems beyond a single model. Combining **agents, retrieval, augme
 <img src="https://img.shields.io/badge/Monitoring-DCE319?style=flat-square&logoColor=black" height="26"/>
 <img src="https://img.shields.io/badge/AI%20Guardrails-FDE725?style=flat-square&logoColor=black" height="26"/>
 
-<br><br>
+<br>
 
 <div align="center">
 <sub> Data & AI · Engineering · Strategy · Research</sub>
