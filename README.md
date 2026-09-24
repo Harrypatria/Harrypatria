@@ -4,9 +4,9 @@
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
 </picture>
 
-## 🛠 Tech Stack
-
 <div align="center">
+
+## 🛠 Tech Stack
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" height="30"/>
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" height="30"/>
@@ -27,8 +27,6 @@
 <img src="https://img.shields.io/badge/AMPL-0A66C2?style=flat-square&logoColor=white" height="30"/>
 <img src="https://img.shields.io/badge/AMOS-C71A36?style=flat-square&logoColor=white" height="30"/>
 <img src="https://img.shields.io/badge/LISREL-1B4F72?style=flat-square&logoColor=white" height="30"/>
-
-</div>
 
 **[→ View CV](./CV/harry-patria-cv.pdf)** 
 
