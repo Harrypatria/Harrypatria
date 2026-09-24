@@ -59,10 +59,8 @@ Designing AI systems beyond a single model. Combining **agents, retrieval, augme
 <div align="center">
 
 <!-- Layer 1 • Core Intelligence -->
-<img src="https://img.shields.io/badge/Retrieval-440154?style=for-the-badge&logoColor=white" height="36"/>
-<img src="https://img.shields.io/badge/Augmentation-482878?style=for-the-badge&logoColor=white" height="36"/>
-<img src="https://img.shields.io/badge/Reasoning-3E4A89?style=for-the-badge&logoColor=white" height="36"/>
-<img src="https://img.shields.io/badge/Evaluation-31688E?style=for-the-badge&logoColor=white" height="36"/>
+<img src="https://img.shields.io/badge/01%20Intent-0D1117?style=for-the-badge&logoColor=white" height="36"/> <img src="https://img.shields.io/badge/02%20Retrieve-440154?style=for-the-badge&logoColor=white" height="36"/> <img src="https://img.shields.io/badge/03%20Augment-482878?style=for-the-badge&logoColor=white" height="36"/> <img src="https://img.shields.io/badge/04%20Reason-3E4A89?style=for-the-badge&logoColor=white" height="36"/> <img src="https://img.shields.io/badge/05%20Act-31688E?style=for-the-badge&logoColor=white" height="36"/> <img src="https://img.shields.io/badge/06%20Evaluate-26828E?style=for-the-badge&logoColor=white" height="36"/>
+
 
 <br>
 
