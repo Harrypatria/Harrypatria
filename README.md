@@ -19,7 +19,7 @@
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" height="30"/>
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" height="30"/>
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" height="30"/>
-<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" height="30"/>
+<img src="https://img.shields.io/badge/Next.js-0D1800?style=flat-square&logo=nextdotjs&logoColor=white" height="30"/>
 <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" height="30"/>
 <img src="https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white" height="30"/>
 <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" height="30"/>
