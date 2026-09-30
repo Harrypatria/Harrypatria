@@ -71,17 +71,17 @@
 <table>
   <tr>
     <td valign="top" width="50%">
-      <!-- GitHub General Stats Card (Viridis Edition) -->
+      <!-- GitHub General Stats Card -->
       <img src="https://vercel.app" alt="Harry's GitHub Stats" width="100%"/>
     </td>
     <td valign="top" width="50%">
-      <!-- Top Languages Card (Viridis Edition) -->
+      <!-- Top Languages Card -->
       <img src="https://vercel.app" alt="Top Languages" width="100%"/>
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center" valign="top" width="100%">
-      <!-- GitHub Streak Stats Card (Viridis Edition) -->
+      <!-- GitHub Streak Stats Card -->
       <img src="https://herokuapp.com" alt="Harry's GitHub Streak" width="100%"/>
     </td>
   </tr>
