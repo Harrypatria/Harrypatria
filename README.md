@@ -71,18 +71,15 @@
 <table>
   <tr>
     <td valign="top" width="50%">
-      <!-- GitHub General Stats Card -->
-      <img src="https://vercel.app" alt="Harry's GitHub Stats" width="100%"/>
+      <img src="https://github-readme-stats.vercel.app/api?username=Harrypatria&show_icons=true&title_color=440154&icon_color=31688e&text_color=35b779&bg_color=0d1117&hide_border=true" alt="Harry's GitHub Stats" width="100%"/>
     </td>
     <td valign="top" width="50%">
-      <!-- Top Languages Card -->
-      <img src="https://vercel.app" alt="Top Languages" width="100%"/>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Harrypatria&layout=compact&title_color=440154&text_color=35b779&bg_color=0d1117&hide_border=true" alt="Top Languages" width="100%"/>
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center" valign="top" width="100%">
-      <!-- GitHub Streak Stats Card -->
-      <img src="https://herokuapp.com" alt="Harry's GitHub Streak" width="100%"/>
+    <td colspan="2" align="center">
+      <img src="https://streak-stats.demolab.com/?user=Harrypatria&background=0d1117&border=31688e&stroke=31688e&ring=440154&fire=35b779&currStreakNum=fde725&sideNums=35b779&currStreakLabel=440154&sideLabels=31688e&dates=9f9f9f&hide_border=true" alt="Harry's GitHub Streak" width="100%"/>
     </td>
   </tr>
 </table>
