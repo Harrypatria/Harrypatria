@@ -71,18 +71,15 @@
 <table>
   <tr>
     <td valign="top" width="50%">
-      <!-- GitHub General Stats Card -->
-      <img src="https://vercel.app" alt="Harry's GitHub Stats" width="100%"/>
+      <img src="https://github-readme-stats.vercel.app/api?username=Harrypatria&show_icons=true&theme=radical" alt="Harry's GitHub Stats" width="100%"/>
     </td>
     <td valign="top" width="50%">
-      <!-- Top Languages Card -->
-      <img src="https://vercel.app" alt="Top Languages" width="100%"/>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Harrypatria&layout=compact&theme=radical" alt="Top Languages" width="100%"/>
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center" valign="top" width="100%">
-      <!-- GitHub Streak Stats Card -->
-      <img src="https://herokuapp.com" alt="Harry's GitHub Streak" width="100%"/>
+    <td colspan="2" align="center">
+      <img src="https://streak-stats.demolab.com/?user=Harrypatria&theme=radical" alt="Harry's GitHub Streak" width="100%"/>
     </td>
   </tr>
 </table>
